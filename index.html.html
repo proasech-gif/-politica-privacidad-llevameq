@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Política de Privacidad — LlévameQ</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #555555;
+    --accent: #1f8a4c;
+    --border: #e4e4e4;
+    --card-bg: #f7f8f7;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --text-muted: #b0b0b0;
+      --accent: #4caf7d;
+      --border: #2a2a2a;
+      --card-bg: #1b1b1b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --text-muted: #b0b0b0;
+    --accent: #4caf7d;
+    --border: #2a2a2a;
+    --card-bg: #1b1b1b;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+  }
+  .fecha {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 36px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 14px 0;
+  }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { color: var(--text-muted); font-weight: 600; }
+  .contacto {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Política de Privacidad de LlévameQ</h1>
+    <p class="fecha">Última actualización: 29 de septiembre de 2026</p>
+
+    <p>Esta política explica qué información recoge la aplicación LlévameQ (en adelante, "la App"), operada por <strong>Yerson Moreno Mosquera</strong>, con qué fin se usa, con quién se comparte y qué derechos tienes sobre tus datos, conforme a la Ley 1581 de 2012 de Colombia (Ley de Protección de Datos Personales).</p>
+
+    <h2>1. Información que recogemos</h2>
+
+    <table>
+      <tr><th>Dato</th><th>Para qué lo usamos</th></tr>
+      <tr>
+        <td>Nombre, teléfono y correo</td>
+        <td>Crear tu cuenta, identificarte ante conductores/pasajeros y contactarte por soporte.</td>
+      </tr>
+      <tr>
+        <td>Ubicación (GPS)</td>
+        <td>Mostrar tu posición en el mapa, calcular la ruta y la tarifa, y conectarte con un conductor cercano.</td>
+      </tr>
+      <tr>
+        <td>Fotos (perfil, documentos del conductor, punto de recogida)</td>
+        <td>Verificar identidad, vehículos, y ayudar al conductor a encontrar el punto de recogida exacto.</td>
+      </tr>
+      <tr>
+        <td>Audio y video durante el viaje</td>
+        <td>Grabación de seguridad, activada solo cuando el usuario la enciende, para proteger a pasajeros y conductores en caso de incidente.</td>
+      </tr>
+      <tr>
+        <td>Contacto de emergencia y alertas SOS</td>
+        <td>Avisar a la persona que elijas, con tu ubicación en tiempo real, si activas el botón de emergencia.</td>
+      </tr>
+      <tr>
+        <td>Información de pago (Nequi, cuenta de ahorros, efectivo)</td>
+        <td>Registrar cómo se pagó el viaje. LlévameQ no almacena números de tarjeta: los pagos con Wompi los procesa Wompi directamente.</td>
+      </tr>
+      <tr>
+        <td>Historial de viajes y calificaciones</td>
+        <td>Mostrar tu historial, calcular calificaciones promedio y mejorar el servicio.</td>
+      </tr>
+      <tr>
+        <td>Datos del dispositivo</td>
+        <td>Prevenir fraude y dar soporte técnico cuando algo falla.</td>
+      </tr>
+    </table>
+
+    <h2>2. Con quién compartimos tu información</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Otros usuarios del servicio:</strong> tu conductor o pasajero ve tu nombre, tu ubicación durante el viaje y tu calificación.</li>
+        <li><strong>Google Maps:</strong> usamos su servicio para mostrar mapas y calcular rutas; Google procesa las coordenadas necesarias para eso.</li>
+        <li><strong>Wompi:</strong> procesa las recargas y pagos; no compartimos con ellos más datos que los necesarios para la transacción.</li>
+        <li><strong>Supabase:</strong> es el proveedor de infraestructura donde se aloja la base de datos de la App. Actúa como encargado del tratamiento, bajo nuestras instrucciones.</li>
+        <li><strong>Autoridades:</strong> solo si una ley o una orden judicial nos obliga a entregar información.</li>
+      </ul>
+      <p>No vendemos tu información personal a terceros con fines publicitarios.</p>
+    </div>
+
+    <h2>3. Cuánto tiempo guardamos tus datos</h2>
+    <p>Guardamos tu información mientras tengas una cuenta activa. Las grabaciones de seguridad de un viaje se conservan por un tiempo limitado y luego se eliminan automáticamente, salvo que estén relacionadas con una alerta o incidencia reportada, caso en el cual se conservan el tiempo necesario para resolverla.</p>
+
+    <h2>4. Tus derechos</h2>
+    <div class="card">
+      <p>Como titular de tus datos, en cualquier momento puedes:</p>
+      <ul>
+        <li>Conocer, actualizar y corregir tu información personal, desde tu perfil en la App.</li>
+        <li>Solicitar la eliminación de tu cuenta y tus datos, escribiéndonos al correo de contacto.</li>
+        <li>Revocar la autorización para el uso de tus datos, entendiendo que esto puede impedirte seguir usando la App.</li>
+        <li>Presentar quejas ante la Superintendencia de Industria y Comercio si consideras que tus datos no se manejaron correctamente.</li>
+      </ul>
+    </div>
+
+    <h2>5. Permisos del celular</h2>
+    <p>La App pide permisos de ubicación, cámara, micrófono y galería de fotos. Todos son opcionales de otorgar salvo la ubicación, que es necesaria para el funcionamiento básico del servicio (pedir o aceptar un viaje). Puedes revisar y cambiar estos permisos en cualquier momento desde los ajustes de tu celular.</p>
+
+    <h2>6. Menores de edad</h2>
+    <p>LlévameQ no está dirigida a menores de 18 años. No solicitamos ni recogemos intencionalmente información de menores de edad.</p>
+
+    <h2>7. Seguridad</h2>
+    <p>Usamos medidas técnicas razonables (cifrado en tránsito, control de acceso a la base de datos) para proteger tu información. Ningún sistema es 100% infalible, así que te pedimos también proteger tu contraseña y no compartirla.</p>
+
+    <h2>8. Cambios a esta política</h2>
+    <p>Si actualizamos esta política, publicaremos la nueva versión en este mismo enlace, con la fecha de actualización correspondiente.</p>
+
+    <div class="contacto">
+      <h2>9. Contacto</h2>
+      <p>Para preguntas, solicitudes sobre tus datos, o quejas, escríbenos a: <strong>proasech@gmail.com</strong></p>
+    </div>
+  </div>
+</body>
+</html>
